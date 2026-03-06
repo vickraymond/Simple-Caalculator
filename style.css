@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(111, 111, 170);
+    justify-content: center;
+    display: flex;
+    min-height: 100hv;
+    align-items: center;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 10px 30px  rgba(0,0,0,0.15);
+
+}
+h1{
+    color: #222222;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    text-align: left;
+    font-size: 1rem;
+    color: #333333;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+input{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #aaaaaa;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    outline: none;
+    text-align: center;
+    color: #222222;
+    background-color: #f9f9f9;
+
+}
+.tip-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+.tip-btn{
+    flex: 1;
+    padding: 12px;
+    background-color: #eeeeee;
+    border: 2px solid #aaaaaa;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #222222;
+}
+.tip-btn.active{
+    background-color: #4caf50;
+    color: #ffffff;
+    border-bottom: #4caf50;
+}
+.result{
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+ .result p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+ }
+ .result span{
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 1.3rem;
+ }
