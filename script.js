@@ -1,11 +1,11 @@
 const billInput = document.getElementById("billAmount");
-const tipButton = document.querySelectorAll(`.tip-btn`);
+const tipButtons = document.querySelectorAll(`.tip-btn`);
 const tipAmount = document.getElementById("tipAmount");
 const totalbill = document.getElementById("totalBill");
 let selectedTip = 0;
 tipButtons.forEach(function(button) {
     button.addEventListener('click' , function(){
-        tipButton.forEach(function(btn){
+        tipButtons.forEach(function(btn){
             btn.classList.remove('active')
         });
         button.classList.add('active');
