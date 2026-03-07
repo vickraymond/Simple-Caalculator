@@ -1,5 +1,5 @@
 const billInput = document.getElementById("billAmount");
-const tipButtons = document.querySelectorAll(`.tip-btn`);
+const tipButtons = document.querySelectorAll('.tip-btn');
 const tipAmount = document.getElementById("tipAmount");
 const totalbill = document.getElementById("totalBill");
 let selectedTip = 0;
@@ -15,7 +15,7 @@ tipButtons.forEach(function(button) {
 })
 function calculateTip(){
     const bill = parseFloat(billInput.value);
-    if(isNaN(bill)  || bill < o) return;
+    if(isNaN(bill)  || bill < 0) return;
     const tip = (bill * selectedTip) / 100;
     const total = bill + tip;
     tipAmount.textContent = '$' + tip.toFixed(2);
